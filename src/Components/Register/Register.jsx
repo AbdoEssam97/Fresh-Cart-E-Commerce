@@ -25,7 +25,7 @@ export default function Register() {
           text: `This Account Already Exists, You Can Login Now`,
           confirmButtonColor: "#0aad0a",
           footer:
-            '<p>Now You Can......  <a href="https://fresh-cart-es.surge.sh/#/login">Login</a></p>',
+            '<p>Now You Can......  <a href="https://fresh-cart-e-commerce-six.vercel.app/#/login">Login</a></p>',
           showClass: {
             popup: `
       animate__animated

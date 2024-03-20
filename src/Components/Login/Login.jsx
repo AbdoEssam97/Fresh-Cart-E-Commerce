@@ -28,7 +28,7 @@ export default function Login() {
           text: `This Account Not Found`,
           confirmButtonColor: "#0aad0a",
           footer:
-            '<p>Now You Can One......  <a href="/register">signUp</a></p>',
+            '<p>Now You Can One......  <a href="https://fresh-cart-e-commerce-six.vercel.app/#/register">signUp</a></p>',
           showClass: {
             popup: `
           animate__animated

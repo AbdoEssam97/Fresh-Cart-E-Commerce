@@ -17,7 +17,7 @@ export default function Address() {
         { shippingAddress: values },
         {
           headers: { token: localStorage.getItem("userToken") },
-          params: { url: "https://fresh-cart-e-commerce-rho.vercel.app//#" },
+          params: { url: "https://fresh-cart-e-commerce-six.vercel.app/#" },
         }
       )
       .catch(() => {

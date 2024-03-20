@@ -3,7 +3,7 @@ import "./App.scss";
 import { Suspense, lazy, useContext, useEffect } from "react";
 import { Toaster } from "react-hot-toast";
 import { ThreeCircles } from "react-loader-spinner";
-import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import { RouterProvider, createHashRouter } from "react-router-dom";
 import CashOrder from "./Components/Address/CashOrder/CashOrder";
 import ProtectedRoutes from "./Components/ProtectedRoutes/ProtectedRoutes";
 import UserOrders from "./Components/UserOrders/UserOrders";
@@ -39,7 +39,7 @@ const Logout = lazy(() => import("./Components/Logout/Logout"));
 const Profile = lazy(() => import("./Components/Profile/Profile"));
 const Notfound = lazy(() => import("./Components/Notfound/Notfound"));
 
-const routes = createBrowserRouter([
+const routes = createHashRouter([
   {
     path: "/",
     element: <Layout />,

@@ -1,0 +1,36 @@
+@use "../../../css/helpers/variables" as *;
+
+.offcanvas {
+  filter: drop-shadow(0 0 0.1875rem #666);
+  -webkit-filter: drop-shadow(0 0 0.1875rem #666);
+  height: fit-content;
+  width: fit-content !important;
+  position: fixed;
+  top: 30% !important;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  padding: 10px !important;
+  .offcanvas-body {
+    .nav-link {
+      font: {
+        size: 18px;
+        weight: 400;
+      }
+      color: #666 !important;
+      text-align: center;
+      transition: 0.3s;
+      &:hover,
+      &.active,
+      &:focus {
+        color: $main-color !important;
+      }
+    }
+  }
+}
+
+.offcanvas-backdrop.show {
+  opacity: 0 !important;
+}

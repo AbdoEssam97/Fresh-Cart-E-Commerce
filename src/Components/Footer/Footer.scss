@@ -1,0 +1,18 @@
+@use "../../css/helpers/variables" as *;
+
+.footer {
+  z-index: 1000 !important;
+  input {
+    padding: 0.875rem;
+    border-width: 0 0.125rem 0.125rem 0;
+    border-style: solid;
+    border-color: transparent #eee #777777a3 transparent;
+
+    &:focus-visible {
+      outline: none;
+      box-shadow: none;
+      border-color: $main-color;
+      caret-color: $main-color;
+    }
+  }
+}

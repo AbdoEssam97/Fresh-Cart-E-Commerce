@@ -1,0 +1,126 @@
+@use "css/helpers/variables" as *;
+
+@import url(" https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  box-sizing: border-box !important;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: $main-color;
+  border-radius: 15px;
+}
+
+::-webkit-scrollbar-track-piece {
+  background-color: #fff;
+}
+
+::-webkit-scrollbar-button {
+  height: 0px;
+}
+
+body {
+  background-image: url(../src/assets/images/light-patten.svg) !important;
+  font-family: "Roboto", sans-serif !important;
+  line-height: 1.5 !important;
+  font-style: normal !important;
+}
+
+.rating-color {
+  color: $rating-color !important;
+}
+
+.cursor-pointer {
+  cursor: pointer !important;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.network {
+  position: fixed;
+  background-color: #ffff;
+  color: #000;
+  padding: 15px;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9999;
+  box-shadow: var(--shadow);
+}
+
+.product {
+  box-shadow: rgba(145, 158, 171, 0.2) 0px 6px 10px 0px,
+    rgba(145, 158, 171, 0.14) 0px 6px 10px 0px,
+    rgba(145, 158, 171, 0.12) 0px 6px 10px 0px;
+}
+
+.product:hover {
+  box-shadow: $shadow !important;
+  border: solid 1px $main-color !important;
+}
+
+.product .btn {
+  transition: transform 1s, opacity 1s;
+  transform: translateY(100%);
+  opacity: 0;
+}
+
+.product:hover .btn {
+  opacity: 1;
+  transform: translateY(0%);
+}
+
+.font-sm {
+  font-size: 14px !important;
+}
+
+.text-main {
+  color: $main-color !important;
+}
+
+.bg-main {
+  background-color: $main-color !important;
+}
+
+.bg-main-light {
+  background-color: $main-color-light !important;
+}
+
+.border-main {
+  border: 1px solid $main-color !important;
+}
+
+.font-sm {
+  font-size: 14px !important;
+}
+
+[disabled] {
+  opacity: 0.4 !important;
+}
+
+div:where(.swal2-container)
+  div:where(.swal2-actions):not(.swal2-loading)
+  .swal2-styled:hover {
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0)
+  ) !important;
+}
+
+div:where(.swal2-container) button:where(.swal2-styled) {
+  padding: 0.625em 2.1em !important;
+  a {
+    color: #ffff !important;
+  }
+}
+
+div:where(.swal2-container)
+  button:where(.swal2-styled).swal2-default-outline:focus {
+  box-shadow: none !important;
+}

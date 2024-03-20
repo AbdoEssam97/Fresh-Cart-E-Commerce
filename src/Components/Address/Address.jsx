@@ -17,7 +17,7 @@ export default function Address() {
         { shippingAddress: values },
         {
           headers: { token: localStorage.getItem("userToken") },
-          params: { url: "https://fresh-cart-e-commerce-snowy.vercel.app/#" },
+          params: { url: "https://fresh-cart-e-commerce-silk.vercel.app/#" },
         }
       )
       .catch(() => {
